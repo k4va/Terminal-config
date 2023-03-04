@@ -74,3 +74,9 @@ sudo pacman -S lsd bat
 # Zsh Theme and Font
 
 As font i use Mononoki Nerd Font from site [nerdfonts.com](nerdfonts.com) and theme is powerlevel10k, can be installed from [here](https://github.com/romkatv/powerlevel10k).
+
+# Additional programs
+``` bash
+sudo apt install xclip
+sudo pacman install xclip
+```
