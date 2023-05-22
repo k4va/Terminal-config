@@ -125,7 +125,11 @@ function rmk(){
 }
 
 #Clear History
-function clear_history { local HISTSIZE=0; }
+function clear_history {
+        echo "" > /home/kava/.zsh_history
+        local HISTSIZE=0;
+        echo "Historial de autosugerencias borrado."
+}
 
 # Finalize Powerlevel10k instant prompt. Should stay at the bottom of ~/.zshrc.
 (( ! ${+functions[p10k-instant-prompt-finalize]} )) || p10k-instant-prompt-finalize
